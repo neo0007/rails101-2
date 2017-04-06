@@ -5,11 +5,4 @@ class Account::PostsController < ApplicationController
     @posts = current_user.posts
   end
 
-  def destroy
-    
-    @group.destroy
-    flash[:alert] = "Group deleted"
-    redirect_to account_posts_path
-  end
-
 end
